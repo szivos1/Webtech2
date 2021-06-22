@@ -1,0 +1,51 @@
+
+body {
+  background-color: #2A3132;
+  text-align: center;
+  font-size: 20px;
+  color: #763626;
+}
+
+h1{
+  font-size: 35px;
+}
+
+.form {
+  alignment: center;
+}
+
+input {
+  margin: 5px;
+  padding: 10px;
+}
+
+.input {
+  margin: 5px;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: #2A3132;
+  color: #763626;
+}
+
+.btn {
+  width: max-content;
+  alignment: center;
+  margin: 5px;
+  padding: 10px 40px 10px 40px;
+  color: #763626;
+  background-color: #90AFC5;
+  border-radius: 4px;
+}
+
+.formbox{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  background-color : #336B87;
+}
+
+mat-form-field{
+  width: 50%;
+}

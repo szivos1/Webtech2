@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<br>
+<div class="formbox">
+
+  <h2>Bejelentkezés</h2>
+<form class="form" [formGroup]= "loginForm" (ngSubmit)="onSubmit()" class="form">
+
+
+  <mat-form-field >
+    <input matInput type="text" class="form-control" placeholder="Email" formControlName="email">
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+    <input matInput type="password" class="form-control" placeholder="Jelszó" formControlName="password">
+  </mat-form-field>
+
+  <br>
+  <button mat-raised-button class="btn" type="render_button" routerLinkActive="active"  >Bejelentkezés</button>
+
+</form>
+<button mat-raised-button class="rbtn" routerLinkActive="active"  routerLink="/register">Regisztráció</button>
+</div>
+
+</body>
+</html>
+
