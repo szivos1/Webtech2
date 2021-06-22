@@ -1,0 +1,32 @@
+<html>
+<body><br>
+
+<div class="formbox">
+  <br>
+  <h1> Új termék felvétele </h1>
+
+<form class="form-horizontal"  [formGroup]="productForm" (ngSubmit)="onSubmit()" class="form">
+  <mat-form-field >
+   <input matInput type="text" class="form-control" placeholder="Termék neve" formControlName="name">
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+    <input matInput type="text" class="form-control" placeholder="Termék tipusa" formControlName="producttype">
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+     <input matInput type="text" class="form-control" placeholder="Termék származási helye" formControlName="origin">
+  </mat-form-field>
+  <br>
+  <mat-form-field >
+     <input matInput type="number" class="form-control" placeholder="Termék mennyisége" formControlName="quantity">
+  </mat-form-field>
+  <br>
+  <p></p>
+  <button mat-raised-button class="kbtn" type="submit" >↑</button>
+  <button mat-raised-button routerLinkActive="active" class="ubtn" routerLink="/dashboard">X</button>
+</form>
+</div>
+</body>
+</html>
+
