@@ -1,0 +1,41 @@
+<html>
+<body><br>
+<h1> Üdvözöljük! </h1><br>
+<h2>Random termékek nyilvántartó rendszere</h2>
+<br>
+
+<table class="mat-table">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Név</th>
+    <th>Típus</th>
+    <th>Származási hely</th>
+    <th>Mennyiség</th>
+    <th>Törlés</th>
+    <th>+</th>
+    <th>-</th>
+  </tr>
+  </thead>
+  <tr *ngFor="let product of products">
+    <td>{{product._id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.producttype}}</td>
+    <td>{{product.origin}}</td>
+    <td>{{product.quantity}}</td>
+    <td>
+      <button (click)="del(product)" class="dbtn" style="width:100%; height:100%;">Törlés</button>
+    </td>
+    <td>
+      <button (click)="inc(product)" class="dbtn" style="width:100%; height:100%;">+</button>
+    </td>
+    <td>
+      <button (click)="dec(product)" class="dbtn" style="width:100%; height:100%;">-</button>
+    </td>
+  </tr>
+</table>
+
+<button mat-raised-button routerLinkActive="active" class="kbtn" routerLink="/add-product">↑</button>
+<button mat-raised-button routerLinkActive="active" class="ubtn" routerLink="/login">X</button>
+</body>
+</html>
